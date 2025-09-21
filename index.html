@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monely: Simplifique sua Cobrança de Boletos</title>
+    <!-- Inclui o Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Define a fonte Inter como padrão para uma melhor legibilidade -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Cor de fundo suave */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Seção do Cabeçalho/Hero -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4 sm:px-6 lg:px-8 shadow-lg">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight rounded-lg p-2">
+                Monely: Simplifique sua Cobrança de Boletos.
+            </h1>
+            <p class="text-lg sm:text-xl mb-10 opacity-90 max-w-3xl mx-auto rounded-lg p-2">
+                Cansado de perder tempo e dinheiro com a gestão de boletos? O Monely é a solução completa para automatizar e otimizar suas cobranças, permitindo que você foque no que realmente importa: o crescimento do seu negócio.
+            </p>
+            <a href="#planos" class="inline-block bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-xl">
+                Comece Agora Grátis!
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção Por Que Escolher o Monely -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-blue-700">Por Que Escolher o Monely?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Cartão de Recurso 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-100">
+                    <div class="flex items-center justify-center bg-blue-100 text-blue-700 rounded-full w-16 h-16 mb-6 mx-auto">
+                        <!-- Ícone de Automação (exemplo: engrenagens) -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 4.39A2 2 0 0113 6v10.59a2 2 0 01-3.41 1.41L6 14h-.5c-1.93 0-3.5-1.57-3.5-3.5v-3C2 5.57 3.57 4 5.5 4H6l1.59-1.59a2 2 0 011.41-.5c.61 0 1.13.25 1.5.62l1.99 1.99zM10 6.59L8.41 5H6c-.83 0-1.5.67-1.5 1.5v3c0 .83.67 1.5 1.5 1.5h.59L10 14.59V6.59z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Automação Inteligente</h3>
+                    <p class="text-gray-600 text-center">Diga adeus ao trabalho manual. O Monely automatiza a emissão, envio e acompanhamento dos seus boletos, liberando seu tempo para tarefas mais estratégicas.</p>
+                </div>
+                <!-- Cartão de Recurso 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-100">
+                    <div class="flex items-center justify-center bg-green-100 text-green-700 rounded-full w-16 h-16 mb-6 mx-auto">
+                        <!-- Ícone de Controle (exemplo: gráfico) -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 3a1 1 0 011-1h2a1 1 0 011 1v13a1 1 0 01-1 1h-2a1 1 0 01-1-1V3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Controle Total</h3>
+                    <p class="text-gray-600 text-center">Tenha uma visão clara e em tempo real de todas as suas cobranças. Dashboard intuitivo, relatórios detalhados e alertas personalizáveis para você nunca perder o controle.</p>
+                </div>
+                <!-- Cartão de Recurso 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-100">
+                    <div class="flex items-center justify-center bg-red-100 text-red-700 rounded-full w-16 h-16 mb-6 mx-auto">
+                        <!-- Ícone de Redução de Inadimplência (exemplo: escudo/cifrão) -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v4a1 1 0 102 0V7zm-1 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Redução da Inadimplência</h3>
+                    <p class="text-gray-600 text-center">Com lembretes automáticos e régua de cobrança configurável, o Monely ajuda a reduzir a inadimplência e a melhorar o fluxo de caixa da sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Recursos Detalhados -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-blue-700">Recursos Que Você Vai Amar</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- Imagem do recurso -->
+                <div class="order-2 md:order-1">
+                    <img src="./img/imagem.jpeg" alt="Dashboard intuitivo do Monely" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <!-- Lista de recursos -->
+                <div class="order-1 md:order-2">
+                    <ul class="space-y-6 text-lg">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Emissão de Boletos Personalizados:</strong> Crie boletos com a sua marca, de forma rápida e profissional.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Envio Automático por E-mail e WhatsApp:</strong> Notifique seus clientes sobre novos boletos e pagamentos de forma eficiente.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Régua de Cobrança Flexível:</strong> Configure lembretes antes do vencimento e ações de cobrança após o atraso.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Conciliação Bancária Automática:</strong> Identifique pagamentos e dê baixa nos boletos sem esforço manual.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Relatórios e Gráficos Gerenciais:</strong> Acesse insights valiosos para tomar decisões estratégicas.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <div><strong class="text-gray-900">Suporte Dedicado:</strong> Nossa equipe está pronta para ajudar você em cada passo do caminho.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quem Se Beneficia -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-blue-700">Quem Se Beneficia com o Monely?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                O Monely é ideal para empresas de todos os portes que buscam otimizar suas cobranças de boletos:
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Beneficiário 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 border border-gray-100">
+                    <img src="https://placehold.co/100x100/A78BFA/FFFFFF?text=PME" alt="Ícone PMEs" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Pequenas e Médias Empresas</h3>
+                    <p class="text-gray-600">Simplifique sua gestão financeira e foque no crescimento.</p>
+                </div>
+                <!-- Beneficiário 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 border border-gray-100">
+                    <img src="https://placehold.co/100x100/60A5FA/FFFFFF?text=Profissionais" alt="Ícone Profissionais Liberais" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Profissionais Liberais e Autônomos</h3>
+                    <p class="text-gray-600">Organize suas finanças e receba seus pagamentos em dia.</p>
+                </div>
+                <!-- Beneficiário 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 border border-gray-100">
+                    <img src="https://placehold.co/100x100/34D399/FFFFFF?text=E-commerce" alt="Ícone E-commerces" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">E-commerces</h3>
+                    <p class="text-gray-600">Automatize o processo de pagamento e melhore a experiência do cliente.</p>
+                </div>
+                <!-- Beneficiário 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 border border-gray-100">
+                    <img src="https://placehold.co/100x100/FCD34D/FFFFFF?text=Clubes" alt="Ícone Associações e Clubes" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Associações e Clubes</h3>
+                    <p class="text-gray-600">Gerencie mensalidades e contribuições de forma eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-blue-700">Depoimentos de Clientes Satisfeitos</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <img src="https://placehold.co/80x80/6EE7B7/FFFFFF?text=AC" alt="Foto de Ana Clara" class="rounded-full mx-auto mb-6 w-20 h-20 object-cover">
+                    <p class="text-lg italic text-gray-700 mb-6">
+                        "Desde que começamos a usar o Monely, nossa inadimplência caiu 20% e nossa equipe economiza horas por semana na gestão de boletos. É um divisor de águas!"
+                    </p>
+                    <p class="font-semibold text-blue-600">- Ana Clara, <span class="text-gray-500 font-normal">Gerente Financeira da Soluções Digitais Ltda.</span></p>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-200">
+                    <img src="https://placehold.co/80x80/93C5FD/FFFFFF?text=JP" alt="Foto de João Pedro" class="rounded-full mx-auto mb-6 w-20 h-20 object-cover">
+                    <p class="text-lg italic text-gray-700 mb-6">
+                        "O Monely é super fácil de usar e o suporte é incrível. Recomendo para qualquer empresa que queira simplificar suas cobranças."
+                    </p>
+                    <p class="font-semibold text-blue-600">- João Pedro, <span class="text-gray-500 font-normal">Empreendedor Individual.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Planos e CTA Final -->
+    <section id="planos" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Pronto para Transformar Suas Cobranças?</h2>
+            <p class="text-xl mb-10 opacity-90">
+                Escolha o plano que melhor se adapta às suas necessidades e comece a experimentar a liberdade de ter suas cobranças sob controle.
+            </p>
+            <a href="#" class="inline-block bg-white text-blue-700 hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-xl">
+                Experimente Grátis por 7 Dias!
+            </a>
+            <p class="mt-8 text-lg opacity-80">
+                <a href="#" class="underline hover:no-underline">Veja Nossos Planos Completos</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de FAQ (Opcional - pode ser uma página separada) -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-blue-700">Perguntas Frequentes (FAQ)</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-semibold text-lg mb-2">Como funciona a integração com meu banco?</h3>
+                    <p class="text-gray-700">O Monely possui integração simplificada com os principais bancos, permitindo a conciliação automática de pagamentos e a emissão de boletos de forma rápida e segura.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-semibold text-lg mb-2">O Monely emite nota fiscal?</h3>
+                    <p class="text-gray-700">O Monely não emite nota fiscal diretamente, mas pode ser integrado com sistemas de gestão e emissão de notas fiscais para um fluxo de trabalho completo.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-semibold text-lg mb-2">Qual o nível de segurança dos meus dados?</h3>
+                    <p class="text-gray-700">Utilizamos as mais avançadas tecnologias de segurança e criptografia para garantir a proteção total dos seus dados e dos dados dos seus clientes.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-100">
+                    <h3 class="font-semibold text-lg mb-2">Posso testar antes de contratar?</h3>
+                    <p class="text-gray-700">Sim! Oferecemos um período de teste gratuito de 7 dias para você explorar todas as funcionalidades do Monely sem compromisso.</p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+                    Ver Todas as Perguntas Frequentes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Monely</h3>
+                <p class="text-gray-400">&copy; 2025 Monely. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contato</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="tel:+5511999999999" class="hover:text-white">Telefone: (11) 99999-9999</a></li>
+                    <li><a href="mailto:contato@monely.com.br" class="hover:text-white">E-mail: contato@monely.com.br</a></li>
+                    <li>Endereço: Rua Exemplo, 123, São Paulo - SP</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Links Úteis</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Blog</a></li>
+                    <li><a href="#" class="hover:text-white">Política de Privacidade</a></li>
+                    <li><a href="#" class="hover:text-white">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-white">Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-10 text-center text-gray-400">
+            <!-- Links para redes sociais - apenas exemplo de ícones, você pode usar SVGs reais -->
+            <a href="#" class="inline-block mx-2 hover:text-white transition duration-300">Facebook</a>
+            <a href="#" class="inline-block mx-2 hover:text-white transition duration-300">Instagram</a>
+            <a href="#" class="inline-block mx-2 hover:text-white transition duration-300">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
